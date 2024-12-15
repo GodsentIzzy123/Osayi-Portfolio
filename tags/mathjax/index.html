@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=https://GodsentIzzy123.github.io/Osayi-Portfolio/fav.png type="image/gif">
+<link rel="icon" href=/firstimage.jpg type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,26 +24,26 @@
 </noscript>
 
 
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/font.css" media="all">
+<link rel="stylesheet" href="/css/font.css" media="all">
 
 
 
 <meta property="og:title" content="Mathjax" />
-<meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
+<meta property="og:description" content="Text about my cool site" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://GodsentIzzy123.github.io/Osayi-Portfolio/tags/mathjax/" />
+<meta property="og:url" content="https://hugo-profile.netlify.app/tags/mathjax/" /><meta property="og:site_name" content="Osayimwense" />
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mathjax"/>
-<meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
+<meta name="twitter:description" content="Text about my cool site"/>
 
 
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/header.css" media="all">
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/footer.css" media="all">
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
 
 
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/theme.css" media="all">
+<link rel="stylesheet" href="/css/theme.css" media="all">
 
 <style>
     :root {
@@ -101,7 +101,7 @@
 
 
 <meta name="description" content="Mathjax of Osayimwense">
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/list.css" media="all">
+<link rel="stylesheet" href="/css/list.css" media="all">
 
 
   
@@ -138,14 +138,40 @@ Mathjax | Osayimwense
 
 
 
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
 
 <header id="profileHeader">
-    <nav class="pt-3 navbar navbar-expand-lg ">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
-            <a class="navbar-brand primary-font text-wrap" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/">
+            <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                
+                <img src="/firstimage.jpg" width="30" height="30"
+                    class="d-inline-block align-top">
+                Osayimwense
                 
             </a>
 
@@ -176,15 +202,49 @@ Mathjax | Osayimwense
                     
 
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
                     
 
                     
 
                     
-
-                    
-
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
                     
 
                     
@@ -194,9 +254,19 @@ Mathjax | Osayimwense
                     
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/blogs/" title="Blogs">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
                             
-                            Blogs
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/gallery" title="Blog posts">
+                            
+                            Gallery
                         </a>
                     </li>
                     
@@ -242,13 +312,13 @@ Mathjax | Osayimwense
                 <div class="card h-100">
                     
                     <div class="card-header">
-                        <a href="https://GodsentIzzy123.github.io/Osayi-Portfolio/blogs/math/">
-                            <img src="https://GodsentIzzy123.github.io/Osayi-Portfolio/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
+                        <a href="/blogs/math/">
+                            <img src="/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
                         </a>
                     </div>
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="https://GodsentIzzy123.github.io/Osayi-Portfolio/blogs/math/" class="primary-font card-title">
+                        <a href="/blogs/math/" class="primary-font card-title">
                             <h5 class="card-title bg-transparent" title="Render Math With Mathjax">Render Math With Mathjax</h5>
                         </a>
                         <div class="card-text secondary-font">
@@ -259,8 +329,8 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">December 9, 2022</span>
-                        <a href="https://GodsentIzzy123.github.io/Osayi-Portfolio/blogs/math/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Dec 9, 2022</span>
+                        <a href="/blogs/math/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -292,7 +362,14 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             
-            &copy; 2024  All Rights Reserved
+                <div class="pb-2">
+                    <a href="https://hugo-profile.netlify.app" title="Osayimwense">
+                        <img alt="Footer logo" src="/firstimage.jpg"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2024  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -307,7 +384,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
         </div>
     </div>
 </div>
-</footer><script src="https://GodsentIzzy123.github.io/Osayi-Portfolio/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -337,7 +414,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 </script>
 
 
-    <script src="https://GodsentIzzy123.github.io/Osayi-Portfolio/js/search.js"></script>
+    <script src="/js/search.js"></script>
 
 
 
