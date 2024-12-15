@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=https://GodsentIzzy123.github.io/Osayi-Portfolio/fav.png type="image/gif">
+<link rel="icon" href=/firstimage.jpg type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 </noscript>
 
 
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/font.css" media="all">
+<link rel="stylesheet" href="/css/font.css" media="all">
 
 
 
@@ -35,9 +35,9 @@ To enable emoji globally, set enableEmoji to true in your site’s configuration
 The Emoji cheat sheet is a useful reference for emoji shorthand codes.
 N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://GodsentIzzy123.github.io/Osayi-Portfolio/blogs/emoji-support/" /><meta property="article:section" content="blogs" />
+<meta property="og:url" content="https://hugo-profile.netlify.app/blogs/emoji-support/" /><meta property="article:section" content="blogs" />
 <meta property="article:published_time" content="2021-04-03T22:53:58+05:30" />
-<meta property="article:modified_time" content="2021-04-03T22:53:58+05:30" />
+<meta property="article:modified_time" content="2021-04-03T22:53:58+05:30" /><meta property="og:site_name" content="Osayimwense" />
 
 
 <meta name="twitter:card" content="summary"/>
@@ -49,11 +49,11 @@ The Emoji cheat sheet is a useful reference for emoji shorthand codes.
 N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform."/>
 
 
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/header.css" media="all">
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/footer.css" media="all">
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
 
 
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/theme.css" media="all">
+<link rel="stylesheet" href="/css/theme.css" media="all">
 
 <style>
     :root {
@@ -111,10 +111,10 @@ N.B. The above steps enable Unicode Standard emoji characters and sequences in H
 
 
 <meta name="description" content="">
-<link rel="stylesheet" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/css/single.css">
+<link rel="stylesheet" href="/css/single.css">
 
 
-<script defer src="https://GodsentIzzy123.github.io/Osayi-Portfolio/fontawesome-6/all-6.4.2.js"></script>
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
 
   
@@ -151,14 +151,40 @@ Emoji Support | Osayimwense
 
 
 
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
 
 <header id="profileHeader">
-    <nav class="pt-3 navbar navbar-expand-lg ">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
-            <a class="navbar-brand primary-font text-wrap" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/">
+            <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                
+                <img src="/firstimage.jpg" width="30" height="30"
+                    class="d-inline-block align-top">
+                Osayimwense
                 
             </a>
 
@@ -189,15 +215,49 @@ Emoji Support | Osayimwense
                     
 
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
                     
 
                     
 
                     
-
-                    
-
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
                     
 
                     
@@ -207,9 +267,19 @@ Emoji Support | Osayimwense
                     
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="https://GodsentIzzy123.github.io/Osayi-Portfolio/blogs/" title="Blogs">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
                             
-                            Blogs
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/gallery" title="Blog posts">
+                            
+                            Gallery
                         </a>
                     </li>
                     
@@ -269,7 +339,7 @@ Emoji Support | Osayimwense
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="https://GodsentIzzy123.github.io/Osayi-Portfolio/images/post.jpg" alt="Emoji Support">
+            <img class="img-fluid mx-auto d-block" src="/images/post.jpg" alt="Emoji Support">
           </div>
           
           <article class="page-content  p-2">
@@ -278,7 +348,7 @@ Emoji Support | Osayimwense
 <p>The <a href="https://gohugo.io/functions/emojify/">emojify</a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
 <p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
 <p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
-<!-- raw HTML omitted -->
+<hr>
 <p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
 <pre tabindex="0"><code>.emoji {
   font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
@@ -309,15 +379,15 @@ Emoji Support | Osayimwense
             <h5>Tags</h5>
             <ul class="tags-ul list-unstyled list-inline">
               
-              <li class="list-inline-item"><a href="https://GodsentIzzy123.github.io/Osayi-Portfolio/tags/emoji-support"
+              <li class="list-inline-item"><a href="https://hugo-profile.netlify.app/tags/emoji-support"
                 target="_blank"
               >Emoji support</a></li>
               
-              <li class="list-inline-item"><a href="https://GodsentIzzy123.github.io/Osayi-Portfolio/tags/sample"
+              <li class="list-inline-item"><a href="https://hugo-profile.netlify.app/tags/sample"
                 target="_blank"
               >Sample</a></li>
               
-              <li class="list-inline-item"><a href="https://GodsentIzzy123.github.io/Osayi-Portfolio/tags/example"
+              <li class="list-inline-item"><a href="https://hugo-profile.netlify.app/tags/example"
                 target="_blank"
               >example</a></li>
               
@@ -331,22 +401,22 @@ Emoji Support | Osayimwense
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fGodsentIzzy123.github.io%2fOsayi-Portfolio%2fblogs%2femoji-support%2f">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2femoji-support%2f">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Emoji%20Support&url=https%3a%2f%2fGodsentIzzy123.github.io%2fOsayi-Portfolio%2fblogs%2femoji-support%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Emoji%20Support&url=https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2femoji-support%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Emoji%20Support: https%3a%2f%2fGodsentIzzy123.github.io%2fOsayi-Portfolio%2fblogs%2femoji-support%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Emoji%20Support: https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2femoji-support%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Emoji%20Support&amp;body=Check%20out%20this%20site https%3a%2f%2fGodsentIzzy123.github.io%2fOsayi-Portfolio%2fblogs%2femoji-support%2f'>
+                  <a target="_blank" href='mailto:?subject=Emoji%20Support&amp;body=Check%20out%20this%20site https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2femoji-support%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -372,7 +442,7 @@ Emoji Support | Osayimwense
 <div class="progress">
   <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-<Script src="https://GodsentIzzy123.github.io/Osayi-Portfolio/js/scrollProgressBar.js"></script>
+<Script src="/js/scrollProgressBar.js"></script>
 
 
 <script>
@@ -394,7 +464,7 @@ Emoji Support | Osayimwense
 
   
   let stickySideBarElem = document.getElementById("stickySideBar");
-  let stickyNavBar =  false ;
+  let stickyNavBar =  true ;
   if(stickyNavBar) {
     let headerElem = document.getElementById("profileHeader");
     let headerHeight = headerElem.offsetHeight + 15;
@@ -405,7 +475,7 @@ Emoji Support | Osayimwense
 </script>
 
 
-<script src="https://GodsentIzzy123.github.io/Osayi-Portfolio/js/readingTime.js"></script>
+<script src="/js/readingTime.js"></script>
 
 
 
@@ -427,7 +497,14 @@ Emoji Support | Osayimwense
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             
-            &copy; 2024  All Rights Reserved
+                <div class="pb-2">
+                    <a href="https://hugo-profile.netlify.app" title="Osayimwense">
+                        <img alt="Footer logo" src="/firstimage.jpg"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2024  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -442,7 +519,7 @@ Emoji Support | Osayimwense
         </div>
     </div>
 </div>
-</footer><script src="https://GodsentIzzy123.github.io/Osayi-Portfolio/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -472,7 +549,7 @@ Emoji Support | Osayimwense
 </script>
 
 
-    <script src="https://GodsentIzzy123.github.io/Osayi-Portfolio/js/search.js"></script>
+    <script src="/js/search.js"></script>
 
 
 
